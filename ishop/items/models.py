@@ -42,11 +42,12 @@ class Item(models.Model):
     )
     category = models.ForeignKey(
         to=Category,
+        related_name='items',
         on_delete=models.PROTECT,
         verbose_name='Категория',
     )
     image = models.ImageField(
-        upload_to='items_images',
+        upload_to='items_images/%Y/%m/%d/',
         verbose_name='Изображение',
         blank=True,
         null=True
@@ -80,6 +81,13 @@ class Item(models.Model):
     def __str__(self):
         return self.name
 
+    def display_id(self):
+        return f'{self.id:05}'
+
+    def discount_price(self):
+        if self.discount:
+            return round(self.price - self.price * self.discount / 100, 2)
+        return self.price
 
 # class ItemsImages(models.Model):
 #     item = models.ForeignKey(

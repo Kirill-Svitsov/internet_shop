@@ -8,8 +8,7 @@ def catalog(request):
     categories = models.Category.objects.all()
     context = {
         'title': 'Каталог',
-        'items': items,
-        'categories': categories
+        'items': items
     }
     return render(request, 'items/catalog.html', context=context)
 
