@@ -6,7 +6,6 @@ from items.models import Category
 
 def index(request):
     categories = Category.objects.all()
-    print(f'Вот категории {categories}')
     context = {
         'categories': categories,
         'title': 'Главная',
