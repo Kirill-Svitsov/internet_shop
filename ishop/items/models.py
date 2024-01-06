@@ -77,6 +77,7 @@ class Item(models.Model):
         db_table = 'items'
         verbose_name = 'Продукт'
         verbose_name_plural = 'Продукты'
+        ordering = ('-pub_date',)
 
     def __str__(self):
         return self.name
