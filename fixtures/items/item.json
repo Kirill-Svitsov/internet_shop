@@ -7,9 +7,9 @@
       "slug": "chajnyj-stolik-i-tri-stula",
       "description": "Комплект из трёх стульев и дизайнерский столик для гостинной комнаты.",
       "category": 5,
-      "image": "",
+      "image": "items_images/2024/01/05/set_of_tea_table_and_three_chairs.jpg",
       "price": "150.00",
-      "discount": "0.00",
+      "discount": "10.00",
       "quantity": 10,
       "pub_date": "2024-01-05"
     }
@@ -22,9 +22,9 @@
       "slug": "chajnyj-stolik-i-dva-stula",
       "description": "Набор из стола и двух стульев в минималистическом стиле.",
       "category": 5,
-      "image": "",
+      "image": "items_images/2024/01/05/set_of_tea_table_and_two_chairs.jpg",
       "price": "93.00",
-      "discount": "0.00",
+      "discount": "8.00",
       "quantity": 12,
       "pub_date": "2024-01-05"
     }
@@ -37,7 +37,7 @@
       "slug": "dvuhspalnaya-krovat",
       "description": "Кровать двухспальная с надголовником и вообще очень ортопедичная.",
       "category": 6,
-      "image": "",
+      "image": "items_images/2024/01/05/double_bed.jpg",
       "price": "670.00",
       "discount": "0.00",
       "quantity": 4,
@@ -52,9 +52,9 @@
       "slug": "kuhonnyj-stol-s-rakovinoj",
       "description": "Кухонный стол для обеда с встроенной раковиной и стульями.",
       "category": 5,
-      "image": "",
+      "image": "items_images/2024/01/05/kitchen_table.jpg",
       "price": "365.00",
-      "discount": "0.00",
+      "discount": "4.00",
       "quantity": 3,
       "pub_date": "2024-01-05"
     }
@@ -67,9 +67,9 @@
       "slug": "kuhonnyj-stol-s-vstrojkoj",
       "description": "Кухонный стол со встроенной плитой и раковиной. Много полок и вообще красивый.",
       "category": 5,
-      "image": "",
+      "image": "items_images/2024/01/05/kitchen_table_2.jpg",
       "price": "433.00",
-      "discount": "0.00",
+      "discount": "11.00",
       "quantity": 2,
       "pub_date": "2024-01-05"
     }
@@ -82,9 +82,9 @@
       "slug": "uglovoj-divan-dlya-gostinnoj",
       "description": "Угловой диван, раскладывается в двухспальную кровать, для гостинной и приема гостей самое то!",
       "category": 7,
-      "image": "",
+      "image": "items_images/2024/01/05/corner_sofa.jpg",
       "price": "233.00",
-      "discount": "0.00",
+      "discount": "40.00",
       "quantity": 4,
       "pub_date": "2024-01-05"
     }
@@ -97,9 +97,9 @@
       "slug": "prikrovatnyj-stolik",
       "description": "Прикроватный столик с двумя выдвижными ящиками (цветок не входит в комплект).",
       "category": 6,
-      "image": "",
+      "image": "items_images/2024/01/05/strange_table.jpg",
       "price": "44.00",
-      "discount": "0.00",
+      "discount": "13.00",
       "quantity": 2,
       "pub_date": "2024-01-05"
     }
@@ -112,9 +112,9 @@
       "slug": "divan-obyknovennyj",
       "description": "Диван, он же софа обыкновенная, ничего примечательного для описания.",
       "category": 7,
-      "image": "",
+      "image": "items_images/2024/01/05/sofa.jpg",
       "price": "102.00",
-      "discount": "0.00",
+      "discount": "1.00",
       "quantity": 3,
       "pub_date": "2024-01-05"
     }
@@ -127,9 +127,9 @@
       "slug": "stul-ofisnyj",
       "description": "Описание товара, про то какой он классный, но это стул, что тут сказать...",
       "category": 8,
-      "image": "",
+      "image": "items_images/2024/01/05/office_chair.jpg",
       "price": "30.00",
-      "discount": "0.00",
+      "discount": "22.00",
       "quantity": 44,
       "pub_date": "2024-01-05"
     }
@@ -142,9 +142,9 @@
       "slug": "rastenie",
       "description": "Растение для украшения вашего интерьера подарит свежесть и безмятежность обстановке.",
       "category": 10,
-      "image": "",
-      "price": "0.00",
-      "discount": "0.00",
+      "image": "items_images/2024/01/05/plants.jpg",
+      "price": "232.00",
+      "discount": "3.00",
       "quantity": 12,
       "pub_date": "2024-01-05"
     }
@@ -157,9 +157,9 @@
       "slug": "cvetok-stilizirovannyj",
       "description": "Дизайнерский цветок (возможно искусственный) для украшения интерьера.",
       "category": 10,
-      "image": "",
+      "image": "items_images/2024/01/05/flower.jpg",
       "price": "22.00",
-      "discount": "0.00",
+      "discount": "99.00",
       "quantity": 133,
       "pub_date": "2024-01-05"
     }
@@ -172,9 +172,9 @@
       "slug": "prikrovatnyj-stolik_second",
       "description": "Столик, довольно странный на вид, но подходит для размещения рядом с кроватью.",
       "category": 6,
-      "image": "",
+      "image": "items_images/2024/01/05/bedside_table.jpg",
       "price": "142.00",
-      "discount": "0.00",
+      "discount": "82.00",
       "quantity": 33,
       "pub_date": "2024-01-05"
     }
