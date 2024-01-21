@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.postgres',
     'debug_toolbar',
     'main.apps.MainConfig',
-    'items.apps.ItemsConfig'
+    'items.apps.ItemsConfig',
+    'users.apps.UsersConfig',
 ]
 
 MIDDLEWARE = [
@@ -57,7 +58,7 @@ ROOT_URLCONF = 'ishop.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
