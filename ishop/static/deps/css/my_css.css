@@ -1,5 +1,5 @@
 body {
-  background-image: url("../images/layer-base.png");
+  background-image: url("../images/ardeco2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -35,4 +35,36 @@ body {
   top: 80%;
   border-radius: 15px;
   font-size: 0.7rem;
+}
+/* Добавил сам */
+/* Стиль кнопки домой */
+.navbar-brand {
+    font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+    color: white;
+    font-weight: bold;
+    /* Дополнительные стили, если необходимо */
+    transition: color 0.3s ease; /* Анимация перехода цвета */
+}
+
+.navbar-brand:hover {
+    color: #ff8c00; /* Оранжевый цвет при наведении */
+}
+/* Стиль Svitsov store */
+h1 {
+    font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+    color: white;
+    font-weight: bold;
+}
+/* Стиль меню */
+/* styles.css */
+.navbar-nav li.nav-item a.nav-link {
+    font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+    color: white !important; /* Добавлено !important, чтобы переопределить другие стили */
+    font-weight: bold;
+    /* Дополнительные стили, если необходимо */
+    transition: color 0.3s ease; /* Анимация перехода цвета */
+}
+
+.navbar-nav li.nav-item a.nav-link:hover {
+    color: #ff8c00 !important; /* Оранжевый цвет при наведении */
 }
