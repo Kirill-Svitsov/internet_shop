@@ -1,5 +1,9 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
+from django.urls import reverse
+from django.utils.text import slugify
+from django.db.models.signals import pre_save
+from django.dispatch import receiver
 
 
 class User(AbstractUser):
@@ -9,6 +13,13 @@ class User(AbstractUser):
         null=True,
         blank=True
     )
+    slug = models.SlugField(
+        verbose_name='URL',
+        max_length=150,
+        unique=True,
+        blank=True,
+        null=True
+    )
 
     class Meta:
         db_table = 'user'
@@ -17,3 +28,13 @@ class User(AbstractUser):
 
     def __str__(self):
         return self.username
+
+    @receiver(pre_save, sender='users.User')
+    def create_user_slug(sender, instance, **kwargs):
+        if not instance.slug:
+            instance.slug = slugify(instance.username)
+
+    def get_absolute_url(self):
+        if self.slug:
+            return reverse('users:profile', kwargs={'username_slug': self.slug})
+        return reverse('users:profile', kwargs={'username_slug': self.username})
