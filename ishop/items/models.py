@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 
 class Category(models.Model):
@@ -60,7 +61,7 @@ class Item(models.Model):
     )
     discount = models.DecimalField(
         default=0.00,
-        verbose_name='Скидка в процентах',
+        verbose_name='Скидка в %',
         max_digits=7,
         decimal_places=2
     )
@@ -81,6 +82,9 @@ class Item(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+        return reverse('catalog:item', kwargs={'item_slug': self.slug})
 
     def display_id(self):
         return f'{self.id:05}'
