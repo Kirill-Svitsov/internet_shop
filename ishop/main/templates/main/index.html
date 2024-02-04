@@ -1,17 +1,62 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block style %}
-    <link rel="stylesheet" href="{% static 'deps/css/my_footer_css.css' %}">
-{% endblock %}
-{% block modal_cart %}
-{% include 'includes/cart_button.html' %}
-{% endblock %}
 {% block content %}
-<!--<div class="mt-5 pt-5 d-flex justify-content-center align-items-center">-->
-<!--    <h1><strong>{{ content }}</strong></h1>-->
-<!--</div>-->
+<div class="container">
+    <div class="row mt-1">
+        <div class="col-lg-10">
+            <div class="mt-5 pt-5 d-flex justify-content-center align-items-center">
+                <a class="navbar-brand" href="{% url 'catalog:index' category_slug='all' %}">
+                    <h1>
+                        <span class="title-letter letter1">S</span>
+                        <span class="title-letter letter2">V</span>
+                        <span class="title-letter letter3">I</span>
+                        <span class="title-letter letter4">T</span>
+                        <span class="title-letter letter5">S</span>
+                        <span class="title-letter letter6">O</span>
+                        <span class="title-letter letter7">V</span>
+                        <span class="title-letter">&nbsp;</span>
+                        <span class="title-letter letter8">S</span>
+                        <span class="title-letter letter9">T</span>
+                        <span class="title-letter letter10">O</span>
+                        <span class="title-letter letter11">R</span>
+                        <span class="title-letter letter12">E</span>
+                    </h1>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const letters = document.querySelectorAll(".title-letter");
+
+        window.addEventListener("wheel", function(e) {
+            letters.forEach((letter, index) => {
+                setTimeout(() => {
+                    letter.style.transition = "color 0.5s ease-in-out, transform 2s ease-in-out, opacity 1s ease-in-out";
+
+                    if (e.deltaY > 0) {
+                        letter.style.color = "transparent";
+                        letter.style.transform = "translateY(-100px)";
+                        letter.style.opacity = "0";
+                    } else {
+                        letter.style.color = "";
+                        letter.style.transform = "";
+                        letter.style.opacity = "1";
+                    }
+                }, index * 100);
+            });
+        });
+    });
+</script>
 
 {% endblock %}
 {% block footer %}
     {% include 'includes/footer.html' %}
 {% endblock %}
+
+
+
+
+

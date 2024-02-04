@@ -68,3 +68,17 @@ h1 {
 .navbar-nav li.nav-item a.nav-link:hover {
     color: #ff8c00 !important; /* Оранжевый цвет при наведении */
 }
+/* Стили главной страницы */
+.title-letter {
+    display: inline-block;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: transparent;
+    text-shadow: 0 0 5px rgba(255, 255, 255);
+    -webkit-text-stroke: 0.5px black;
+    margin: 0 5px;
+    transition: color 0.5s ease-in-out, transform 2s ease-in-out, opacity 1s ease-in-out;
+}
+.title-letter:hover {
+    color: red;
+}

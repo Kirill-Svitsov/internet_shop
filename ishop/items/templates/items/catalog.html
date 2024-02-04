@@ -1,19 +1,15 @@
 {% extends 'base.html' %}
 {% load static %}
 {% load items_tags %}
-{% block modal_cart %}
-{% include 'includes/cart_button.html' %}
-{% endblock %}
 {% block content %}
 <!-- Контент на странице -->
 <div class="row">
     <!-- Форма фильтров -->
-    <div class="dropdown mb-2">
+    <div class="dropdown mb-2 mobile-center">
         <button class="btn btn-secondary dropdown-toggle btn-dark" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
             Фильтры
         </button>
-
         <form action="{% if request.GET.q %}{% url 'catalog:search' %}{% else %}{% url 'catalog:index' slug_url %}{% endif %}" method="get" class="dropdown-menu bg-dark" data-bs-theme="dark">
             <div class="form-check text-white mx-3">
                 <input class="form-check-input" type="checkbox"
@@ -56,14 +52,14 @@
     </div>
     {% if request.GET.q %}
     <h3 class='mt-3' style='color: white'>Результаты поиска по запросу <span style="color: #f8af2e;">{{ request.GET.q }}</span></h3>
-    {% if not items %}
-        <link rel="stylesheet" href="{% static 'deps/css/my_footer_css.css' %}">
-        <h2 class='mt-4' style='color: white'>По запросу ничего не найдено</h2>
-    {% endif %}
+        {% if not items %}
+            <link rel="stylesheet" href="{% static 'deps/css/my_footer_css.css' %}">
+            <h2 class='mt-4' style='color: white'>По запросу ничего не найдено</h2>
+        {% endif %}
     {% endif %}
     {% for item in items %}
     <!-- Карта товара -->
-    <div class="col-lg-4 col-md-6 p-4">
+        <div class="col-lg-4 col-md-6 p-4">
         <div class="rounded custom-shadow card text-white bg-dark">
             {% if item.image %}
             <img src="{{item.image.url}}" class="card-img-top" alt="{{item.name}}">
@@ -111,7 +107,6 @@
         </div>
     </div>
     {% endfor %}
-
 </div>
 <!-- Пагинация -->
 {% if items %}
@@ -143,6 +138,18 @@
         </ul>
     </nav>
 {% endif %}
+<style>
+    @media only screen and (max-width: 767px) {
+        .dropdown.mobile-center {
+            display: flex;
+            justify-content: center;
+            margin-top: 2px;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+    }
+</style>
 {% endblock %}
 {% block footer %}
 {% endblock %}
